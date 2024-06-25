@@ -15,5 +15,5 @@ The malloc_t_bad() function behaves just like malloc_t(), but it keeps track of 
 
 For the purpose of fail_t, any malloc_t() that is not malloc_t_bad() will not be taken into consideration.
 
-Finally, the leak_size() function will return an integer that represents the number of pointers currently mallocced, and the link_free() function will free all pointer tracked by 
+Finally, the leak_size() function will return an integer that represents the number of pointers currently mallocced, and the link_free() function will free all pointers tracked by 
 malloc_t() and malloc_t_bad(), effectively getting rid of any leaks.
