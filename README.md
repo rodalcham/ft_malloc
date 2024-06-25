@@ -7,9 +7,7 @@ The malloc_t() function works just like a malloc, but it keeps track of the poin
 
 The free_t() is meant to be used in conjunction with malloc_t() and behaves just like a normal free(), but it also removes the pointer fron the linked list.
 
-# IMPORTANT
-
-Malloccing memory with malloc_t() and not freeing it with free_t() WILL cause memory leaks.
+IMPORTANT : Malloccing memory with malloc_t() and not freeing it with free_t() WILL cause memory leaks.
 
 The fail_t(int n) function takes an integer, and will start a countdown that will fail the n_th malloc_t_bad() starting from that point.
 
