@@ -11,7 +11,8 @@ IMPORTANT : Malloccing memory with malloc_t() and not freeing it with free_t() W
 
 The fail_t(int n) function takes an integer, and will start a countdown that will fail the n_th malloc_t_bad() starting from that point.
 
-The malloc_t_bad() function behaves just like malloc_t(), but it keeps track of the fail_t() countdown. 
+The malloc_t_bad() function behaves just like malloc_t(), but it keeps track of the fail_t() countdown.
+
 For the purpose of fail_t, any malloc_t() that is not malloc_t_bad() will not be taken into consideration.
 
 Finally, the leak_size() function will return an integer that represents the number of pointers currently mallocced, and the link_free() function will free all pointer tracked by 
