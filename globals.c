@@ -21,7 +21,7 @@ link_t	**get_head(void)
 
 int	*get_bad(void)
 {
-	static int	bad = 0;
+	static int	bad = -1;
 
 	return (&bad);
 }
